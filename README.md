@@ -16,7 +16,7 @@
 
 ---
 
-# 📌 Overview
+# Overview
 
 Smart Medication Management & Health Assistant is a modern healthcare web application that helps users search medicines, receive AI-powered health guidance, request unavailable medicines, and manage personal medication history.
 
@@ -24,11 +24,11 @@ The project is specifically designed to demonstrate the practical implementation
 
 ---
 
-# ✨ Features
+# Features
 
-## 👤 User Features
+## User Features
 
-### 🔍 Smart Medicine Search
+###  Smart Medicine Search
 
 Search medicines using:
 
