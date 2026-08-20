@@ -1,614 +1,236 @@
-# 💊 Smart Medication Management & Health Assistant
+# 💊 Smart Medication System
 
-<div align="center">
-
-![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react)
-![Python](https://img.shields.io/badge/Backend-Python-3776AB?style=for-the-badge&logo=python)
-![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql)
-![Tailwind CSS](https://img.shields.io/badge/UI-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
-### 🚀 A Full Stack Healthcare Management System with Real-World Data Structure Implementation
-
-*"Managing medicines smarter, faster, and more efficiently."*
-
-</div>
+A desktop application built in **Java Swing** that helps users manage medicines, track inventory, receive medicine reminders, monitor low stock, and check upcoming expiry dates.
 
 ---
 
-# Overview
+## 📌 Features
 
-Smart Medication Management & Health Assistant is a modern healthcare web application that helps users search medicines, receive AI-powered health guidance, request unavailable medicines, and manage personal medication history.
-
-The project is specifically designed to demonstrate the practical implementation of **Data Structures & Algorithms (DSA)** in a real-world healthcare application while maintaining a modern Full Stack architecture.
-
----
-
-# Features
-
-## User Features
-
-###  Smart Medicine Search
-
-Search medicines using:
-
-- Medicine Name
-- Brand
-- Disease
-- Category
-
-### 📦 Medicine Details
-
-View complete medicine information including:
-
-- 💰 Price
-- 💊 Tablets per Strip
-- 🩺 Uses
-- 📖 Dosage
-- 📅 Expiry Date
-- 📦 Available Stock
-- ⚠ Prescription Required
-- 🏭 Manufacturer
-- 🔄 Alternative Medicines
-
----
-
-### 🤖 AI Health Assistant
-
-Users can describe their symptoms:
-
-> **Example**
-
-```
-I have fever and headache.
-```
-
-AI provides:
-
-- Possible causes
-- OTC medicine suggestions
-- Home remedies
-- Precautions
-- Doctor consultation advice
-
-> **Note:** This assistant provides recommendations only and does **NOT** replace professional medical advice.
-
----
-
-### 📝 Medicine Request System
-
-If a medicine is unavailable, users can submit a request:
-
-- Medicine Name
+### ✅ Add Medicine
+- Add medicine name
+- Dosage
+- Time
 - Quantity
-- Contact Information
-- Additional Notes
-
-The request is automatically sent to the Admin Dashboard.
-
----
-
-### 👤 User Profile
-
-Users can access:
-
-- Previous Searches
-- Requested Medicines
-- Saved Medicines
-- AI Chat History
-
----
-
-# 🛠 Admin Dashboard
-
-## 📊 Dashboard Overview
-
-- Total Medicines
-- Total Requests
-- Low Stock Alerts
-- New Arrivals
-- Most Selling Medicines
-- Least Selling Medicines
-
----
-
-## 📦 Inventory Management
-
-Admin can:
-
-- ➕ Add Medicine
-- ✏ Update Stock
-- 🗑 Delete Medicine
-- 💰 Change Price
-- 📅 Update Expiry Date
-
----
-
-## 📋 Medicine Requests
-
-Displays:
-
-| User | Medicine | Quantity | Date | Status |
-|------------|------------|------------|------------|------------|
-
-Admin Actions:
-
-- ✅ Approve
-- ❌ Reject
-- 🚚 Mark Ordered
-
----
-
-## 📈 Sales Analytics
-
-Interactive graphs showing:
-
-- Top Selling Medicines
-- Least Selling Medicines
-- Monthly Sales
-- Category Distribution
-
----
-
-## ⏰ Expiry Tracker
-
-Automatically identifies medicines expiring within:
-
-- 30 Days
-- 60 Days
-- 90 Days
-
----
-
-## 🤖 AI Insights
-
-Provides intelligent suggestions:
-
-- Medicines to Restock
-- Fast Moving Inventory
-- Slow Moving Inventory
-
----
-
-# 🏗 Project Architecture
-
-```
-                 👤 User
-                    │
-                    ▼
-         React + Tailwind Frontend
-                    │
-                    ▼
-          Python REST API Backend
-                    │
-                    ▼
-         Data Structure Processing Layer
-                    │
-                    ▼
-              MySQL Database
-```
-
----
-
-# 💻 Tech Stack
-
-| Layer | Technology |
-|----------------|----------------------|
-| Frontend | React.js |
-| Styling | Tailwind CSS |
-| Backend | Python (Flask / FastAPI) |
-| Database | MySQL |
-| AI Integration | Gemini / OpenAI API |
-| API Testing | Postman |
-| Version Control | Git & GitHub |
-
----
-
-# 📂 Project Structure
-
-```
-Smart-Medication-Management/
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── components/
-│
-├── backend/
-│   ├── api/
-│   ├── models/
-│   ├── routes/
-│   └── data_structures/
-│
-├── database/
-│   ├── schema.sql
-│   └── seed.sql
-│
-├── assets/
-│
-├── README.md
-└── requirements.txt
-```
-
----
-
-# 🧠 Data Structures Implementation
-
-This project demonstrates practical applications of multiple Data Structures.
-
----
-
-## 1️⃣ Array
-
-### Used For
-
-- Medicine List
-- Categories
-- Search Results
-
-```
-Medicines[]
-
-Paracetamol
-Crocin
-Dolo
-```
-
-### Complexity
-
-```
-Access : O(1)
-Traversal : O(n)
-```
-
----
-
-## 2️⃣ Linked List
-
-### Used For
-
-Medicine Request Queue
-
-```
-Request 1
-    ↓
-Request 2
-    ↓
-Request 3
-```
-
-### Advantage
-
-Efficient insertion and deletion.
-
-```
-Insertion : O(1)
-Deletion : O(1)
-```
-
----
-
-## 3️⃣ Stack
-
-### Used For
-
-Recent Searches
-
-```
-Search A
-Search B
-Search C
-──────────
-Top → Search C
-```
-
-### Principle
-
-```
-LIFO
-Last In First Out
-```
-
----
-
-## 4️⃣ Queue
-
-### Used For
-
-Admin Request Processing
-
-```
-User1
-User2
-User3
-```
-
-### Principle
-
-```
-FIFO
-First In First Out
-```
-
----
-
-## 5️⃣ HashMap
-
-### Used For
-
-Instant Medicine Search
-
-```
-Paracetamol → Object
-
-Crocin → Object
-
-Dolo → Object
-```
-
-### Complexity
-
-```
-Search : O(1)
-```
-
-instead of
-
-```
-Linear Search : O(n)
-```
-
----
-
-## 6️⃣ Binary Search Tree (BST)
-
-### Used For
-
-Sorting by
-
-- Price
-- Stock
 - Expiry Date
-
-```
-          500
-        /     \
-      300     700
-```
-
-### Complexity
-
-```
-Search : O(log n)
-Insertion : O(log n)
-```
+- Automatically stores data in text file
 
 ---
 
-## 7️⃣ Priority Queue (Heap)
-
-### Used For
-
-Expiry Alert System
-
-```
-Highest Priority
-
-Medicine Expiring Tomorrow
-
-↑
-
-Medicine Expiring Next Week
-
-↑
-
-Medicine Expiring Next Month
-```
-
-### Complexity
-
-```
-Insert : O(log n)
-Delete : O(log n)
-```
+### 📦 Inventory Management
+- View all medicines
+- Search medicines
+- Delete medicines
+- Undo deleted medicine
 
 ---
 
-## 8️⃣ Graph (Advanced)
-
-Used for Medicine Recommendation Network
-
-```
-        Fever
-          │
-          ▼
-    Paracetamol
-          │
-          ▼
-     Pain Relief
-          │
-          ▼
-        Crocin
-```
-
-Useful for AI-based medicine suggestions.
+### ⏰ Next Medicine Reminder
+- Shows the next medicine based on the current system time.
+- Ignores medicines whose time has already passed.
 
 ---
 
-# 🗄 Database Schema
+### ⚠ Low Stock Alert
+Displays medicines whose quantity is less than 5.
 
-## Medicines
+Example:
 
-| Field |
-|----------------|
-| Medicine_ID |
-| Name |
-| Price |
-| Stock |
-| Tablets |
-| Expiry |
-| Uses |
-| Category |
-| Manufacturer |
+Crocin (Qty: 3)
+
+Paracetamol (Qty: 2)
 
 ---
 
-## Users
-
-| Field |
-|----------------|
-| User_ID |
-| Name |
-| Email |
-| Password |
-| Phone |
+### 📅 Expiry Alert
+Shows medicines expiring within the next '30 days'.
 
 ---
 
-## Medicine Requests
+### 📝 History
+Keeps track of:
 
-| Field |
-|----------------|
-| Request_ID |
-| User_ID |
-| Medicine |
-| Quantity |
-| Status |
+- Medicine Added
+- Medicine Deleted
+- Medicine Restored
 
 ---
 
-## Sales
+### 💾 File Storage
+All data is stored locally using text files.
 
-| Field |
-|----------------|
-| Sale_ID |
-| Medicine_ID |
-| Quantity |
-| Date |
+No database required.
 
 ---
 
-# 🔗 REST APIs
+## 🛠 Technologies Used
 
-## User APIs
-
-```
-GET    /medicine/search
-
-GET    /medicine/:id
-
-POST   /medicine/request
-
-POST   /ai/assistant
-```
-
----
-
-## Admin APIs
-
-```
-GET    /admin/inventory
-
-POST   /admin/addmedicine
-
-PUT    /admin/updatestock
-
-DELETE /admin/deletemedicine
-
-GET    /admin/reports
-```
+- Java
+- Java Swing
+- OOP
+- Collections Framework
+- HashMap
+- Priority Queue
+- Stack
+- File Handling
+- Git
+- Github
+- VS Code
 
 ---
 
-# 🎨 UI Design Philosophy
+## 📂 Project Structure
 
-✔ Minimal Interface
-
-✔ Mobile Friendly
-
-✔ Responsive Layout
-
-✔ Card Based Design
-
-✔ Large Search Bar
-
-✔ Elderly Friendly Navigation
-
-✔ Soft Color Palette
-
-✔ Dark Mode Support
+src/
+│
+├── app/
+├── model/
+├── ui/
+├── service/
+├── storage/
+├── datastructure/
+│
+assets/
+data/
 
 ---
 
-# ⚡ Time Complexity
+## 📁 Data Storage
 
-| Operation | Data Structure | Complexity |
-|--------------------------------|----------------|------------|
-| Search Medicine | HashMap | **O(1)** |
-| Process Request | Queue | **O(1)** |
-| Recent Search | Stack | **O(1)** |
-| Add Request | Linked List | **O(1)** |
-| Sort by Expiry | BST | **O(log n)** |
-| Expiry Alert | Priority Queue | **O(log n)** |
+Medicines are stored inside
 
----
+data/medicines.txt
 
-# 🌟 Future Enhancements
+History is stored inside
 
-- 💳 Online Medicine Ordering
-- 📍 Nearby Pharmacy Locator
-- 📱 Mobile Application
-- 🔔 Medicine Reminder Notifications
-- 📄 Prescription Upload & OCR
-- 📊 AI Health Analytics
-- 🌐 Multi-language Support
+data/history.txt
 
 ---
 
-# 🚀 Getting Started
+## 🚀 How to Run
+
+### Compile
 
 ```bash
-# Clone Repository
+javac -d out src/app/*.java src/ui/*.java src/model/*.java src/service/*.java src/storage/*.java src/datastructure/*.java
+```
 
-git clone https://github.com/yourusername/smart-medication-management.git
+### Run
 
-# Frontend
-
-cd frontend
-npm install
-npm run dev
-
-# Backend
-
-cd backend
-pip install -r requirements.txt
-python app.py
+```bash
+java -cp out app.Main
 ```
 
 ---
 
-# 🤝 Contributing
+## 📸 Screenshots
 
-Contributions, feature requests, and suggestions are welcome.
+### Dashboard
 
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Push the branch
-5. Open a Pull Request
+<img width="1976" height="1390" alt="Screenshot 2026-06-29 090401" src="https://github.com/user-attachments/assets/4a186f12-b96b-4c41-8312-8e0e1e648093" />
+
+
 
 ---
 
-# 📄 License
+### Add Medicine
 
-This project is created for **Educational & Academic Purposes** to demonstrate practical implementation of **Data Structures, Full Stack Development, and AI Integration**.
+<img width="1978" height="1384" alt="image" src="https://github.com/user-attachments/assets/efc71fe9-d111-4650-bba5-953c4396eb5f" />
+
 
 ---
 
-<div align="center">
+### Inventory
 
-## ⭐ If you like this project, don't forget to Star the Repository!
+<img width="1978" height="1384" alt="image" src="https://github.com/user-attachments/assets/191b51e1-e144-45e7-99d0-790be1843d28" />
 
-**Made with ❤️ using React, Python, MySQL & Data Structures**
 
-</div>
+---
+
+### Low Stock Alert
+
+<img width="1978" height="1390" alt="image" src="https://github.com/user-attachments/assets/83607a40-24c7-4b1e-bdb5-6b49b7b8087f" />
+
+
+---
+
+### Next Medicine
+
+<img width="1970" height="1384" alt="image" src="https://github.com/user-attachments/assets/4b005b63-738d-4ac2-9c64-df9c8d74daa2" />
+
+
+---
+
+
+### Expiry Alert
+
+<img width="1974" height="1388" alt="image" src="https://github.com/user-attachments/assets/3f9b7369-e3a1-479a-8037-439a21da0b30" />
+
+
+---
+
+### History
+
+<img width="1974" height="1388" alt="image" src="https://github.com/user-attachments/assets/b0f565dc-767c-4440-aabe-cec3c4a24ebf" />
+
+
+---
+
+
+## 🧠 Data Structures Used
+
+| Data Structure | Purpose |
+|---------------|---------|
+| ArrayList | Store medicines |
+| HashMap | Fast medicine search (O(1)) |
+| Stack | Undo delete feature |
+| Priority Queue | Next medicine reminder |
+
+---
+
+## 🎯 Future Improvements
+
+- User Login & Authentication
+- SQLite / MySQL Database Integration
+- Desktop Notifications
+- Email & SMS Medicine Reminders
+- Dark Mode
+- Medicine Images
+- Export Reports (PDF/Excel)
+- Calendar Integration
+- Multi-user Support
+- Cloud Data Backup
+
+---
+
+## ⭐ Version
+
+Current Release: **v1.0**
+
+This version includes:
+
+- Modern Dashboard UI
+- Add Medicine
+- Inventory Management
+- Search Medicine
+- Delete Medicine
+- Undo Delete
+- Next Medicine Reminder
+- Low Stock Alert
+- Expiry Alert
+- History Tracking
+- Local File Storage
+
+
+---
+
+
+## 👨‍💻 Author
+
+**Rituraj Mishra**
+
+Computer Science Engineering Student
+
+Aspiring Software Developer
+
+GitHub:
+https://github.com/riturajmishraa
