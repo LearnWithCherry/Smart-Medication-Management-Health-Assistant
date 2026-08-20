@@ -229,4 +229,4 @@ This version includes:
 **Rajat Bhardwaj** 
 </h2>
 GitHub:
-[https://github.com/riturajmishraa](https://github.com/LearnWithCherry/Smart-Medication-Management-Health-Assistant.git)
+https://github.com/LearnWithCherry/Smart-Medication-Management-Health-Assistant.git
