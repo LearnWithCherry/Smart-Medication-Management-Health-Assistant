@@ -224,7 +224,7 @@ This version includes:
 ---
 
 
-<h2>👨‍💻 Author - **Rajat Bhardwaj** 
-</h2>
+<h2>👨‍💻 Author - Rajat Bhardwaj </h2>
+
 GitHub:
 https://github.com/LearnWithCherry/Smart-Medication-Management-Health-Assistant.git
