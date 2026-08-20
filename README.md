@@ -224,13 +224,9 @@ This version includes:
 ---
 
 
-## 👨‍💻 Author
+<h2>👨‍💻 Author
 
-**Rituraj Mishra**
-
-Computer Science Engineering Student
-
-Aspiring Software Developer
-
+**Rajat Bhardwaj** 
+</h2>
 GitHub:
-https://github.com/riturajmishraa
+[https://github.com/riturajmishraa](https://github.com/LearnWithCherry/Smart-Medication-Management-Health-Assistant.git)
